@@ -87,17 +87,17 @@ a {
 }
 
 #azul {
-  background-color: rgb(46, 102, 255);
+  background-color: aqua;
   height: 100vh;
 }
 
 #amarelo {
-  background-color: rgb(255, 217, 0);
+  background-color: yellow;
   height: 100vh;
 }
 
 #vermelho {
-  background-color: rgb(255, 51, 51);
+  background-color: fuchsia;
   height: 100vh;
 }
 
