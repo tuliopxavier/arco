@@ -1,0 +1,162 @@
+/* -------------GENERAL----------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* -------------NAVBAR----------- */
+
+.navbar {
+  background: linear-gradient(
+    145deg,
+    rgb(155, 0, 226),
+    rgb(195, 85, 247),
+    rgb(2, 175, 255)
+  );
+  color: white;
+  padding: 1.5rem;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  transition: .3s ease-in-out;
+}
+
+.navbar ul {
+  display: inline-block;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.logo img {
+  display: inline;
+  width: 6rem;
+  margin-left: 1.5rem;
+  float: left;
+}
+
+.logo img:hover {
+  filter: invert(50%) sepia(50%) saturate(2878%) hue-rotate(179deg) brightness(500%) contrast(97%);
+}
+
+.menu-items {
+  display: inline;
+  margin: auto;
+  margin-left: -7.5rem;
+}
+
+.menu-items a {
+  color: white;
+  text-transform: uppercase;
+  border: 1px solid;
+  padding: 3px 10px;
+  margin: 0px 5px;
+}
+
+.menu-items a:hover {
+  text-decoration: underline;
+  border: none;
+  filter: invert(50%) sepia(50%) saturate(2878%) hue-rotate(179deg) brightness(500%) contrast(97%);
+}
+
+.menu-items a:active {
+    color: purple;
+}
+
+
+/* -------------SECTIONS----------- */
+
+#home {
+  height: 100vh;
+  background: 
+    linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70%),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70%);
+}
+
+#azul {
+  background-color: rgb(46, 102, 255);
+  height: 100vh;
+}
+
+#amarelo {
+  background-color: rgb(255, 217, 0);
+  height: 100vh;
+}
+
+#vermelho {
+  background-color: rgb(255, 51, 51);
+  height: 100vh;
+}
+
+.footer {
+  padding: 1.5rem;
+  justify-content: center;
+  text-align: center;
+}
+
+
+/* -------------WHATSAPP----------- */
+
+.whatsapp-icon img {
+    position: fixed;
+    bottom: 0;
+    right: 1rem;
+    height: 6rem;
+    z-index: 2;
+    filter: drop-shadow(0 0 0.2rem rgb(37, 37, 37));
+}
+
+.whatsapp-icon img:hover {
+    cursor: pointer;
+    filter: invert(50%) sepia(50%) saturate(2878%) hue-rotate(179deg) brightness(500%) contrast(97%);
+}
+
+
+/* -------------QUERIES----------- */
+
+@media (max-width: 860px) {
+    .navbar {
+        text-align: right;
+    }
+
+    .menu-items a {
+        float: right;
+    }
+
+    .logo img {
+        margin-left: .1rem ;
+    }
+
+    #azul p {
+        color: white;
+        line-height: 2; 
+        padding: 8rem 4rem;
+        height: 100%;
+    }
+ }
+
+ @media (max-width: 600px) {
+    .navbar ul {
+        display: block;
+     }
+
+    .logo img {
+        width: 5rem;
+    }
+
+ }
