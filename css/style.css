@@ -28,8 +28,6 @@ a {
   position: fixed;
   width: 100%;
   text-align: center;
-  top: 0;
-  transition: .3s ease-in-out;
 }
 
 .navbar ul {
@@ -73,6 +71,11 @@ a {
 
 .menu-items a:active {
     color: purple;
+}
+
+#menu {
+  top: 0;
+  transition: .3s ease-in-out;
 }
 
 
