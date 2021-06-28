@@ -69,14 +69,30 @@ a {
   filter: invert(50%) sepia(50%) saturate(2878%) hue-rotate(179deg) brightness(500%) contrast(97%);
 }
 
-.menu-items a:active {
-    color: purple;
-}
-
-#menu {
+#main-menu {
   top: 0;
   transition: .3s ease-in-out;
 }
+
+
+/* -------------HAMBURGUER NAVBAR----------- */
+
+#checkbox {
+  display: none;
+}
+
+#hamburguer-menu label {
+  display: none;
+  font-size: 1.33rem;
+  float: right;
+  margin-right: 2.5rem;
+}
+
+#hamburguer-menu label:hover {
+  filter: invert(50%) sepia(50%) saturate(2878%) hue-rotate(179deg) brightness(500%) contrast(97%);
+  cursor: pointer;
+}
+
 
 
 /* -------------SECTIONS----------- */
@@ -128,36 +144,38 @@ a {
 }
 
 
-/* -------------QUERIES----------- */
+/* -------------MEDIA QUERIES----------- */
 
-@media (max-width: 860px) {
-    .navbar {
-        text-align: right;
+@media (max-width: 768px) {
+  
+    #hamburguer-menu label {
+      display: block;
     }
 
-    .menu-items a {
-        float: right;
+    #checkbox ~ .menu-items a {
+      display: none;
     }
 
-    .logo img {
-        margin-left: .1rem ;
+    #checkbox:checked ~ .menu-items a {
+      display: block;
+      color: white;
+      margin: 1rem 0;
     }
 
-    #azul p {
-        color: white;
-        line-height: 2; 
-        padding: 8rem 4rem;
-        height: 100%;
+    .navbar li {
+      display: block;
     }
- }
 
- @media (max-width: 600px) {
     .navbar ul {
-        display: block;
-     }
-
-    .logo img {
-        width: 5rem;
+      background: linear-gradient(
+    155deg,
+    rgb(2, 175, 255),
+    rgb(195, 85, 247),
+    rgb(155, 0, 226)
+      );
+      padding: 0 4rem 0 1rem;
+      position: absolute;
+      right: 0;
+      top: 5rem;
     }
-
- }
+}
